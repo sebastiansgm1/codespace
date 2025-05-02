@@ -1,10 +1,10 @@
 {
-    "name": "Playwright Test",
-    "image": "mcr.microsoft.com/devcontainers/javascript-node:18",
-    "postCreateCommand": "npm install && npx playwright install && sudo npx playwright install-deps",
-    "customizations": {
-      "vscode": {
-        "extensions": ["ms-playwright.playwright"]
-      }
+  "name": "Node.js",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "20"
     }
-  }
+  },
+  "postCreateCommand": "npm install"
+}
